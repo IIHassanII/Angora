@@ -1,0 +1,466 @@
+body {
+  font-family: Poppins, sans-serif;
+}
+
+/* ======================= */
+/* Header */
+.home {
+  position: relative;
+}
+.home .slid-caption {
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
+}
+.home .slid-caption h1 {
+  font-size: 55px;
+  font-weight: 700;
+  color: #fff;
+  margin: 0;
+}
+.nav-brdr {
+  background-color: rgba(0, 0, 0, 0.705);
+  z-index: 9999;
+  padding: 13px 0 !important;
+  border-bottom: 1px solid rgba(204, 204, 204, 0.212);
+}
+
+.nav-link {
+  font-size: 12px;
+  font-weight: 600;
+  color: #fff !important;
+  transition: 0.3s all;
+  padding: 15px 12px !important;
+}
+.nav-link.active {
+  color: #f25454 !important;
+}
+.nav-link:hover {
+  color: #f25454 !important;
+}
+.social-ico a {
+  color: #fff;
+  padding: 0 3px;
+  font-size: 13px;
+  transition: 0.3s all;
+}
+.social-ico {
+  padding-left: 30px;
+}
+.social-ico a:hover {
+  color: #f25454;
+}
+.logo-img {
+  width: 120px;
+}
+.btn-1,
+.btn-2 {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  left: 0;
+  top: 44%;
+  border: 1px solid #ccc;
+  border-left: none;
+  color: #fff !important;
+  background-color: transparent;
+  transition: 0.5s all;
+}
+.btn-2 {
+  top: 53%;
+}
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  background: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.icon-arr {
+  color: #fff !important;
+  font-size: 20px;
+  transition: 0.5s all;
+}
+
+.btn-2:hover {
+  background-color: #fff;
+  color: #f25454;
+}
+.btn-1:hover {
+  background-color: #fff;
+  color: #f25454;
+}
+.btn-:hover .icon-arr {
+  color: #f25454 !important;
+}
+.setting {
+  width: 35px;
+  height: 35px;
+  background-color: #1f2528;
+  position: fixed;
+  top: 130px;
+  left: 0;
+  cursor: pointer;
+  z-index: 999;
+}
+
+.animate {
+  width: 30px;
+  height: 45px;
+  border: 1px solid #fff;
+  position: absolute;
+  bottom: 25px;
+  left: 50%;
+  cursor: pointer;
+}
+.animate span {
+  display: block;
+  width: 10px;
+  height: 10px;
+  color: #fff;
+  border-radius: 50%;
+  background-color: #fff;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 0;
+  opacity: 0;
+  animation-duration: 1.8s;
+  animation-name: moving;
+  animation-iteration-count: infinite;
+}
+@keyframes moving {
+  0% {
+    top: 0;
+    opacity: 0;
+  }
+  100% {
+    top: 60%;
+    opacity: 1;
+  }
+}
+/* =================== */
+
+/* About*/
+.heading h2 {
+  font-size: 65px;
+  color: #dee3e4;
+}
+.heading p:first-of-type {
+  font-size: 33px;
+}
+.p-head {
+  width: 51%;
+  margin: auto;
+  text-align: center;
+  color: #999;
+  font-size: 16px;
+  font-weight: 300;
+}
+.heading h2 span {
+  display: block;
+  width: 30px;
+  height: 1px;
+  background-color: #1f2528;
+  margin: auto;
+  transition: 0.5s all;
+}
+.head-container:hover span {
+  width: 50px;
+}
+
+.about .about-caption p {
+  font-size: 12px;
+  font-weight: 300;
+  color: #666;
+  text-align: justify;
+  width: 97%;
+}
+
+.progress-bar {
+  background-color: #f25454;
+}
+.progress {
+  height: 3px;
+  margin-bottom: 25px;
+}
+.title-prog span {
+  color: #444;
+  font-size: 13px;
+  padding-bottom: 4px;
+}
+
+/* ==================== */
+/* our-team */
+.members .layer {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(242, 84, 84, 0.85);
+  opacity: 0;
+  position: absolute;
+  transition: 0.3s all;
+}
+.members:hover .layer {
+  opacity: 1;
+}
+.members:hover img {
+  transform: scale(1.1);
+}
+.members img {
+  transition: 0.3s all;
+}
+
+.members .title h6 {
+  font-size: 14px;
+  padding-bottom: 0;
+  margin-bottom: 2px;
+  transition: 0.3s all;
+}
+.members .title span {
+  font-size: 12px;
+  color: #666;
+}
+.members:hover h6 {
+  color: #f25454;
+}
+/* ============ */
+.ideas {
+  margin: 90px auto;
+}
+.ideas span {
+  font-size: 30px;
+  font-weight: 300;
+}
+.ideas button {
+  background-color: #f25454;
+  border: none;
+  color: #fff;
+  padding: 10px 15px;
+  font-size: 12px;
+  transition: 0.4s opacity;
+}
+.ideas button:hover {
+  opacity: 0.9;
+}
+/* ============ */
+
+/* services */
+
+.services {
+  background-color: #fafafa;
+  padding: 50px 0;
+}
+.my-service h6 {
+  font-size: 16px;
+  padding-bottom: 5px;
+}
+.my-service p {
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+  color: #666;
+  line-height: 1.7;
+}
+.my-service .icon {
+  color: #f25454;
+  font-size: 23px;
+  padding: 0 10px;
+}
+
+/* ================= */
+/* Clients */
+
+.our-clients .client {
+  padding: 20 0;
+}
+.our-clients .client img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+}
+.our-clients .scale img {
+  transform: scale(1.3);
+}
+.our-clients .scale h6 {
+  margin: 15px 0 0 0;
+}
+.our-clients .scale span {
+  font-size: 13px;
+  font-family: "Open Sans", sans-serif;
+  color: #666;
+}
+.caption-c {
+  font-size: 25px;
+  font-family: "Open Sans", sans-serif;
+  line-height: 38px;
+}
+.caption-c .quote {
+  font-size: 35px;
+}
+/* ==================== */
+
+/* Contact */
+.contact {
+  background-color: #fafafa;
+  margin-top: 120px;
+}
+.contact-info .info {
+  padding: 15px 0;
+  border-bottom: 1px solid #eee;
+}
+.contact-info .info h3 {
+  font-size: 20px;
+  margin-bottom: 2px;
+}
+.contact-info .info span {
+  font-size: 13px;
+  font-family: "Open Sans", sans-serif;
+  color: #666;
+}
+.contact-info .info .icon {
+  font-size: 35px;
+  padding: 15px;
+  color: #f25454;
+}
+.contact-form input {
+  margin-bottom: 18px;
+  padding: 10px;
+}
+.contact-form input:focus {
+  box-shadow: none;
+  border: 1px solid #f25454;
+}
+.contact-form textarea {
+  height: 100px;
+}
+.contact-form textarea:focus {
+  box-shadow: none;
+  border: 1px solid #f25454;
+}
+
+.contact-form button {
+  color: #fff;
+  background-color: #f25454;
+  border: none;
+  padding: 13px 20px;
+  margin-top: 30px;
+  transition: 0.3s all;
+}
+.contact-form button:hover {
+  background-color: #f25454b4;
+}
+::placeholder {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+/* ============== */
+
+.footer {
+  color: #fff;
+  background-color: #222;
+  background-image: url(../images/dotted-map.png);
+  background-size: contain;
+  padding: 60px 0;
+  position: relative;
+}
+.footer h3 {
+  font-size: 18px;
+  padding-bottom: 10px;
+  padding-top: 20px;
+}
+.footer a {
+  text-decoration: none;
+  color: #b0b0b0;
+  font-size: 13px;
+  display: block;
+  padding-bottom: 6px;
+  transition: 0.5s all;
+}
+.footer a:hover {
+  color: #f25454;
+}
+.footer p {
+  font-size: 13px;
+  color: #b0b0b0;
+}
+.footer .logo {
+  text-align: center;
+  padding: 0 0 35px 0;
+}
+.footer .some-links {
+  overflow: hidden;
+}
+.footer .some-links a {
+  float: left;
+  padding: 5px 10px;
+  border: 1px solid #b0b0b0;
+  margin: 5px 5px;
+  border-radius: 3px;
+}
+.footer .some-links a:hover {
+  border: 1px solid #f25454;
+}
+/* ================ */
+
+/* last footer */
+.last-footer {
+  background-color: #1a1a1a;
+  color: #fff;
+  padding: 15px 0;
+}
+
+.last-footer p {
+  margin: 0;
+  padding: 10px;
+  color: #b0b0b0;
+  font-size: 14px;
+}
+.last-footer p span {
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s all;
+}
+.last-footer p span:hover {
+  color: #f25454;
+}
+.last-footer .icons .icon {
+  padding: 10px;
+  transition: 0.3s all;
+  cursor: pointer;
+}
+.last-footer .icons .icon:hover {
+  color: #f25454;
+}
+
+/* ============ */
+/* go-up icon */
+.go-up {
+  width: 50px;
+  height: 50px;
+  background-color: #f2545494;
+  color: #fff;
+  border-radius: 50%;
+  display: block;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  transition: 0.5s all;
+}
+.go-up .icon {
+  text-decoration: none;
+  color: #fff;
+  margin-top: 15px;
+  font-size: 18px;
+}
+.go-up:hover {
+  background-color: #f25454;
+}
